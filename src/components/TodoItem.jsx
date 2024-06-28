@@ -17,10 +17,10 @@ function TodoItem({todo}) {
         toogleComplete(todo.id)
     }
   return (
-    <div className="flex flex-col justify-center gap-3 ">
+    <div className="flex flex-col justify-center  gap-3 ">
           <div>
             <ul>
-              <div className={`text-gray-300 w-full h-[50px]
+              <div className={`text-gray-300  h-[50px]
                  bg- text-bold flex justify-center gap-9 items-center 
                  relative right-3
                  `}>
@@ -33,7 +33,7 @@ function TodoItem({todo}) {
                 value={todoMsg}
                  readOnly={!isEditible}
                  onChange={(e)=>{settodoMsg(e.target.value)}}
-                 className={`border-none cursor-pointer focus:outline-none  
+                 className={`border-none cursor-pointer focus:outline-none  font-serif w-full sm:w-[400px]
                      ${todo.completed?"dark:bg-green-300 bg-green-500":"bg-slate-500 text-white dark:bg-customColor dark:text-customBackground"}
                       rounded-md w-[300px] h-[40px]
                     pl-5 ${todo.completed? "line-through text-gray-800":"line-clamp-none"} `}

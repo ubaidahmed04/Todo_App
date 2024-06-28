@@ -16,7 +16,7 @@ function TodoForm() {
           <input
             type="text "
             placeholder="Add todo "
-            className="w-[300px] h-[40px] rounded-md p-4 text-md "
+            className="w-full md:w-[400px] h-[40px] rounded-md p-4 text-md font-serif"
             value={todo}
             onChange={(e)=>setTodo(e.target.value)}
           />

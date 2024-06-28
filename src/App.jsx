@@ -62,7 +62,7 @@ useEffect(()=>{
 
       <div className=' dark:bg-customBackground bg-slate-300 flex flex-col gap-[20px] pt-[100px] items-center h-[100vh]'>
       <ThemeBtn />
-        <span className='text-3xl text-bold dark:text-customColor text-customBackground font-bold  font-mono'>TODO APP</span>
+        <span className='text-3xl text-bold dark:text-customColor text-customBackground font-bold  font-serif'>TODO APP</span>
     <TodoForm/>
     {todos.map((todo)=>(
       <div key={todo.id}>
